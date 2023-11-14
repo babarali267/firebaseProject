@@ -38,6 +38,7 @@ function SignInLinkToEmail(email) {
     });
 }
 
-const email = 'fiverr34471966@gmail.com';
+const User_email = document.querySelector('#email');
+const SignInBtn = document.querySelector('#sign_email')
+SignInBtn.addEventListener('click',SignInLinkToEmail(User_email))
 
-SignInLinkToEmail(email)

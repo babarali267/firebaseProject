@@ -19,7 +19,7 @@ const auth = getAuth(app);
 
 function SignInLinkToEmail(email) {
   const actionCodeSettings = {
-    url: 'http://127.0.0.1:5500/', // URL where the link will redirect after successful sign-in
+    url: 'https://babarali267.github.io/', // URL where the link will redirect after successful sign-in
     handleCodeInApp: true,
   };
 

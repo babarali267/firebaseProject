@@ -38,7 +38,7 @@ function SignInLinkToEmail(email) {
     });
 }
 
-const User_email = document.querySelector('#email');
+const User_email = document.querySelector('#email').value;
 const SignInBtn = document.querySelector('#sign_email')
 SignInBtn.addEventListener('click',SignInLinkToEmail(User_email))
 

@@ -17,6 +17,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+
+
 function SignInLinkToEmail(email) {
   const actionCodeSettings = {
     url: 'https://babarali267.github.io/', // URL where the link will redirect after successful sign-in
@@ -24,6 +26,7 @@ function SignInLinkToEmail(email) {
   };
 
   // Call sendSignInLinkToEmail on the auth object obtained using getAuth
+
   sendSignInLinkToEmail(auth, email, actionCodeSettings)
     .then(() => {
       // The link was successfully sent
@@ -35,4 +38,6 @@ function SignInLinkToEmail(email) {
     });
 }
 
-SignInLinkToEmail('fiverr34471966@gmail.com');
+const email = 'fiverr34471966@gmail.com';
+
+SignInLinkToEmail(email)
